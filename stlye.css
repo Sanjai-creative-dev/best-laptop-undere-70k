@@ -1,0 +1,129 @@
+/* body */
+body{
+    background-color: #202124;
+    color: white;
+    cursor: default;
+}
+
+#body{
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+    cursor: pointer;
+}
+
+#body:hover{
+        box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 40px #39ff14;
+
+}
+
+#body:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+#body.active{
+    box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 40px #39ff14;
+
+}
+
+.clicked {
+  animation: clickyEffect 150ms ease-in-out;
+}
+
+@keyframes clickyEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.97);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.content-hover{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px 0px 0px 40px;
+    margin-top: 10px;
+
+
+}
+
+.main.active .content-hover {
+  display: flex;
+}
+
+.main:hover .content-hover {
+  display: flex;
+}
+
+
+/* main */
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin-left: 60px;
+}
+
+.main{
+    text-align: center;
+    width: 300px;
+    height: fit-content;
+    padding: 5px 10px 5px 10px ;
+    overflow: hidden;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+/* spec expant */
+.caret{
+    cursor: pointer;
+}
+
+
+/* btn */
+
+.button{
+    margin: 10px 0px;
+    border: none;
+    border-radius: 8px;
+    width:fit-content;
+    padding: 5px 10px;
+    background-color:transparent;
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+    border: #39ff14 1.9px solid;
+
+}
+.button:hover{
+    border: #39ff14 1.9px solid;
+    background-color: #39ff14;
+    text-decoration: none;
+    color: white;
+    transform: scale(1.09);
+    transition: 0.5s;
+}
+
+.btn-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -47px;
+
+}
+
+/* img */
+
+img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10px 10px -29px;
+    /* margin-left: -39px; */
+}
